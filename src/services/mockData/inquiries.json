@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "clientName": "Sarah Johnson",
+    "clientEmail": "sarah.johnson@email.com",
+    "clientPhone": "+1 (555) 123-4567",
+    "eventType": "Wedding",
+    "eventDate": "2024-06-15T00:00:00.000Z",
+    "message": "Hi! I'm planning my wedding for June 15th and would love to discuss having you perform at our reception. We're expecting about 150 guests and the venue is The Grand Ballroom downtown. Could we set up a time to chat about your availability and pricing? Thank you!",
+    "submittedAt": "2024-01-15T10:30:00.000Z",
+    "status": "new",
+    "artistNotes": ""
+  },
+  {
+    "Id": 2,
+    "clientName": "Michael Chen",
+    "clientEmail": "m.chen@corporateevents.com",
+    "clientPhone": "+1 (555) 987-6543",
+    "eventType": "Corporate",
+    "eventDate": "2024-03-22T00:00:00.000Z",
+    "message": "We're organizing our annual company gala and are looking for entertainment. The event will be held at the Convention Center with approximately 300 attendees. We'd like to discuss booking you for a 2-hour performance during dinner service.",
+    "submittedAt": "2024-01-12T14:45:00.000Z",
+    "status": "responded",
+    "artistNotes": "Sent quote and availability. Waiting for confirmation."
+  },
+  {
+    "Id": 3,
+    "clientName": "Emily Rodriguez",
+    "clientEmail": "emily.r.2024@gmail.com",
+    "clientPhone": "+1 (555) 456-7890",
+    "eventType": "Birthday",
+    "eventDate": "2024-02-28T00:00:00.000Z",
+    "message": "I'm throwing a surprise 50th birthday party for my husband and would love to have live music. It's going to be at our home with about 40 close friends and family. The theme is classic rock, which I know is right up your alley!",
+    "submittedAt": "2024-01-10T09:15:00.000Z",
+    "status": "confirmed",
+    "artistNotes": "Confirmed booking. Deposit received. Classic rock setlist prepared."
+  },
+  {
+    "Id": 4,
+    "clientName": "David Thompson",
+    "clientEmail": "dthompson@email.com",
+    "clientPhone": "+1 (555) 234-5678",
+    "eventType": "Anniversary",
+    "eventDate": "2024-05-10T00:00:00.000Z",
+    "message": "My wife and I are celebrating our 25th wedding anniversary and would like to recreate our wedding reception with live music. We're looking for someone who can play romantic classics and some 90s hits. The venue is intimate, about 60 guests.",
+    "submittedAt": "2024-01-08T16:20:00.000Z",
+    "status": "seen",
+    "artistNotes": ""
+  },
+  {
+    "Id": 5,
+    "clientName": "Lisa Martinez",
+    "clientEmail": "lisa.martinez@university.edu",
+    "clientPhone": "+1 (555) 345-6789",
+    "eventType": "Graduation",
+    "eventDate": "2024-05-25T00:00:00.000Z",
+    "message": "We're planning a graduation celebration for our daughter and her friends. It's an outdoor event in our backyard with about 75 people. We'd love upbeat, contemporary music that appeals to both the graduates and their families.",
+    "submittedAt": "2024-01-05T11:10:00.000Z",
+    "status": "new",
+    "artistNotes": ""
+  },
+  {
+    "Id": 6,
+    "clientName": "Robert Kim",
+    "clientEmail": "rob.kim@festivals.org",
+    "clientPhone": "+1 (555) 567-8901",
+    "eventType": "Festival",
+    "eventDate": "2024-07-04T00:00:00.000Z",
+    "message": "We're organizing the annual Summer Music Festival and would like to discuss having you as one of our featured performers. This is an outdoor event expecting 2,000+ attendees. We have a main stage with full sound and lighting setup.",
+    "submittedAt": "2024-01-03T13:30:00.000Z",
+    "status": "responded",
+    "artistNotes": "Very interested! Sent detailed proposal and tech rider."
+  },
+  {
+    "Id": 7,
+    "clientName": "Amanda Foster",
+    "clientEmail": "amanda.foster@email.com",
+    "clientPhone": "+1 (555) 678-9012",
+    "eventType": "Private",
+    "eventDate": "2024-04-18T00:00:00.000Z",
+    "message": "I'm hosting an intimate dinner party for some close friends and would love to have acoustic background music. It's a small gathering of about 12 people at my home. Looking for something elegant and understated.",
+    "submittedAt": "2024-01-02T08:45:00.000Z",
+    "status": "confirmed",
+    "artistNotes": "Booked for acoustic set. Menu preferences discussed."
+  },
+  {
+    "Id": 8,
+    "clientName": "Jennifer Walsh",
+    "clientEmail": "jen.walsh@email.com",
+    "clientPhone": "+1 (555) 789-0123",
+    "eventType": "Wedding",
+    "eventDate": "2024-08-12T00:00:00.000Z",
+    "message": "We're getting married in August and looking for ceremony and reception music. The ceremony will be outdoors with about 100 guests, and the reception will be in a nearby barn. We love folk and indie music. Can you handle both parts of the event?",
+    "submittedAt": "2023-12-28T15:20:00.000Z",
+    "status": "responded",
+    "artistNotes": "Quoted for both ceremony and reception. Awaiting venue details."
+  }
+]

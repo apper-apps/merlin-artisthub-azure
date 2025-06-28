@@ -1,0 +1,75 @@
+[
+  {
+    "Id": 1,
+    "inquiryId": 1,
+    "type": "new_inquiry",
+    "timestamp": "2024-01-15T10:30:00.000Z",
+    "read": false,
+    "clientName": "Sarah Johnson",
+    "eventType": "Wedding",
+    "message": "New inquiry from Sarah Johnson for Wedding event"
+  },
+  {
+    "Id": 2,
+    "inquiryId": 2,
+    "type": "status_update",
+    "timestamp": "2024-01-13T16:20:00.000Z",
+    "read": false,
+    "clientName": "Michael Chen",
+    "eventType": "Corporate",
+    "status": "responded",
+    "message": "Inquiry status updated to responded"
+  },
+  {
+    "Id": 3,
+    "inquiryId": 3,
+    "type": "status_update",
+    "timestamp": "2024-01-11T14:15:00.000Z",
+    "read": false,
+    "clientName": "Emily Rodriguez",
+    "eventType": "Birthday",
+    "status": "confirmed",
+    "message": "Inquiry status updated to confirmed"
+  },
+  {
+    "Id": 4,
+    "inquiryId": 5,
+    "type": "new_inquiry",
+    "timestamp": "2024-01-05T11:10:00.000Z",
+    "read": true,
+    "clientName": "Lisa Martinez",
+    "eventType": "Graduation",
+    "message": "New inquiry from Lisa Martinez for Graduation event"
+  },
+  {
+    "Id": 5,
+    "inquiryId": 6,
+    "type": "reminder",
+    "timestamp": "2024-01-04T09:00:00.000Z",
+    "read": true,
+    "clientName": "Robert Kim",
+    "eventType": "Festival",
+    "message": "Reminder: Follow up on inquiry from Robert Kim"
+  },
+  {
+    "Id": 6,
+    "inquiryId": 7,
+    "type": "status_update",
+    "timestamp": "2024-01-02T10:30:00.000Z",
+    "read": true,
+    "clientName": "Amanda Foster",
+    "eventType": "Private",
+    "status": "confirmed",
+    "message": "Inquiry status updated to confirmed"
+  },
+  {
+    "Id": 7,
+    "inquiryId": 8,
+    "type": "new_inquiry",
+    "timestamp": "2023-12-28T15:20:00.000Z",
+    "read": true,
+    "clientName": "Jennifer Walsh",
+    "eventType": "Wedding",
+    "message": "New inquiry from Jennifer Walsh for Wedding event"
+  }
+]

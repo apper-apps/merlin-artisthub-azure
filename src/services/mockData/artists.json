@@ -1,0 +1,24 @@
+[
+  {
+    "Id": 1,
+    "name": "Alex Rivera",
+    "bio": "Professional musician and performer with over 10 years of experience in live entertainment. Specializing in acoustic performances, wedding ceremonies, and corporate events. Known for versatile repertoire spanning multiple genres and exceptional audience engagement.",
+    "profilePhoto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "hourlyRate": 250,
+    "eventTypes": ["Wedding", "Corporate", "Birthday", "Anniversary", "Private"],
+    "availability": {
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "sunday": false
+    },
+    "rating": 4.9,
+    "totalGigs": 156,
+    "yearsActive": 10,
+    "instruments": ["Guitar", "Piano", "Vocals"],
+    "genres": ["Pop", "Rock", "Folk", "Jazz", "Country"]
+  }
+]

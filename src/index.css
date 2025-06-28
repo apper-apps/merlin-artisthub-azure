@@ -1,0 +1,85 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-primary text-white font-medium py-3 px-6 rounded-lg 
+           shadow-lg shadow-primary-500/25 hover:shadow-xl hover:shadow-primary-500/30 
+           transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-gray-700 font-medium py-3 px-6 rounded-lg border border-gray-200
+           hover:bg-gray-50 hover:border-gray-300 transform hover:scale-[1.02] 
+           active:scale-[0.98] transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md 
+           transition-all duration-200;
+  }
+  
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-500 
+           focus:ring-2 focus:ring-primary-100 transition-colors duration-200;
+  }
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  @apply top-4 right-4;
+  width: 320px;
+}
+
+.Toastify__toast {
+  @apply rounded-lg shadow-lg;
+  min-height: 64px;
+  padding: 12px 16px;
+}
+
+.Toastify__toast--success {
+  @apply bg-white border-l-4 border-success-500;
+}
+
+.Toastify__toast--error {
+  @apply bg-white border-l-4 border-error-500;
+}
+
+.Toastify__toast--info {
+  @apply bg-white border-l-4 border-primary-500;
+}
+
+.Toastify__toast--warning {
+  @apply bg-white border-l-4 border-warning-500;
+}
+
+.Toastify__toast-body {
+  @apply text-gray-800 font-medium;
+  padding: 0;
+  margin: 0;
+}
+
+.Toastify__progress-bar {
+  @apply bg-gradient-primary;
+}
+
+.Toastify__close-button {
+  @apply text-gray-400 hover:text-gray-600;
+}
