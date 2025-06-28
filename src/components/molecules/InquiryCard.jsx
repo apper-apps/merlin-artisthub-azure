@@ -19,7 +19,7 @@ const InquiryCard = ({ inquiry }) => {
     return colors[status] || 'border-l-gray-400';
   };
 
-  const getEventTypeIcon = (eventType) => {
+const getEventTypeIcon = (eventType) => {
     const icons = {
       'wedding': 'Heart',
       'corporate': 'Building2',
@@ -30,7 +30,7 @@ const InquiryCard = ({ inquiry }) => {
       'private': 'Users',
       'other': 'Star'
     };
-    return icons[eventType.toLowerCase()] || 'Calendar';
+    return icons[(eventType?.toLowerCase() ?? 'other')] || 'Calendar';
   };
 
   return (
