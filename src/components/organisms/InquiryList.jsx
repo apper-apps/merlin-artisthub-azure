@@ -44,20 +44,20 @@ function InquiryList() {
     if (searchTerm) {
       const searchLower = searchTerm.toLowerCase();
       const matchesSearch = 
-        inquiry.clientName.toLowerCase().includes(searchLower) ||
-        inquiry.eventType.toLowerCase().includes(searchLower) ||
-        inquiry.message.toLowerCase().includes(searchLower);
+inquiry.Name.toLowerCase().includes(searchLower) ||
+        inquiry.subject.toLowerCase().includes(searchLower) ||
+        inquiry.description.toLowerCase().includes(searchLower);
       
       if (!matchesSearch) return false;
     }
 
     // Status filter
-    if (filters.statuses.length > 0 && !filters.statuses.includes(inquiry.status)) {
+if (filters.statuses.length > 0 && !filters.statuses.includes(inquiry.status)) {
       return false;
     }
 
     // Event type filter
-    if (filters.eventTypes.length > 0 && !filters.eventTypes.includes(inquiry.eventType)) {
+if (filters.eventTypes.length > 0 && !filters.eventTypes.includes(inquiry.subject)) {
       return false;
     }
 

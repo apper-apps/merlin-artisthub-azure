@@ -33,7 +33,7 @@ const NotificationItem = ({ notification, onMarkAsRead, onNavigate }) => {
       whileHover={{ scale: 1.01 }}
       className={`
         card p-4 cursor-pointer transition-all duration-200
-        ${!notification.read ? 'border-l-4 border-l-primary-500 bg-primary-50/30' : ''}
+${!notification.is_read ? 'border-l-4 border-l-primary-500 bg-primary-50/30' : ''}
       `}
       onClick={() => {
         onMarkAsRead(notification.Id);
@@ -46,12 +46,12 @@ const NotificationItem = ({ notification, onMarkAsRead, onNavigate }) => {
         <div className="flex-shrink-0">
           <div className={`
             w-10 h-10 rounded-full flex items-center justify-center
-            ${!notification.read ? 'bg-primary-100' : 'bg-gray-100'}
+${!notification.is_read ? 'bg-primary-100' : 'bg-gray-100'}
           `}>
             <ApperIcon 
               name={getNotificationIcon(notification.type)} 
               size={18} 
-              className={!notification.read ? 'text-primary-600' : 'text-gray-600'} 
+className={!notification.is_read ? 'text-primary-600' : 'text-gray-600'}
             />
           </div>
         </div>
@@ -59,8 +59,8 @@ const NotificationItem = ({ notification, onMarkAsRead, onNavigate }) => {
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between">
             <div className="flex-1">
-              <p className={`text-sm ${!notification.read ? 'font-semibold text-gray-900' : 'text-gray-700'}`}>
-                {getNotificationText(notification)}
+<p className={`text-sm ${!notification.is_read ? 'font-semibold text-gray-900' : 'text-gray-700'}`}>
+                {notification.message}
               </p>
               {notification.eventType && (
                 <p className="text-xs text-gray-500 mt-1">
@@ -69,17 +69,17 @@ const NotificationItem = ({ notification, onMarkAsRead, onNavigate }) => {
               )}
             </div>
             <div className="flex items-center space-x-2 ml-2">
-              {!notification.read && (
+{!notification.is_read && (
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
               )}
               <span className="text-xs text-gray-500">
-                {format(new Date(notification.timestamp), 'h:mm a')}
+{format(new Date(notification.created_at), 'h:mm a')}
               </span>
             </div>
           </div>
           
           <div className="mt-2 text-xs text-gray-500">
-            {format(new Date(notification.timestamp), 'MMM d, yyyy')}
+{format(new Date(notification.created_at), 'MMM d, yyyy')}
           </div>
         </div>
       </div>

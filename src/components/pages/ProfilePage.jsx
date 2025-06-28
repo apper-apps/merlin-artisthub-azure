@@ -16,7 +16,7 @@ const ProfilePage = () => {
     try {
       setLoading(true);
       setError('');
-      const data = await artistService.getById(1); // Assuming current artist ID is 1
+const data = await artistService.getById(1); // Assuming current artist ID is 1
       setArtist(data);
     } catch (err) {
       setError('Failed to load profile. Please try again.');
@@ -40,12 +40,12 @@ const ProfilePage = () => {
         {/* Profile Header */}
         <div className="card p-6 text-center">
           <Avatar 
-            src={artist.profilePhoto}
-            fallback={artist.name?.charAt(0)}
+src={artist.profile_image_url}
+            fallback={artist.Name?.charAt(0)}
             size="2xl"
             className="mx-auto mb-4"
           />
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">{artist.name}</h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">{artist.Name}</h1>
           <p className="text-gray-600 mb-4">{artist.bio}</p>
           
           <div className="flex justify-center space-x-2 mb-4">
@@ -83,7 +83,7 @@ const ProfilePage = () => {
             <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-3">
               <ApperIcon name="DollarSign" size={24} className="text-accent-600" />
             </div>
-            <p className="text-2xl font-bold text-gray-900">${artist.hourlyRate}</p>
+<p className="text-2xl font-bold text-gray-900">$250</p>
             <p className="text-sm text-gray-600">Hourly Rate</p>
           </div>
 

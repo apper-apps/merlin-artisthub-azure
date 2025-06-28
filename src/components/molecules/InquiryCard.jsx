@@ -45,15 +45,15 @@ const InquiryCard = ({ inquiry }) => {
     >
       <div className="flex items-start justify-between">
         <div className="flex items-start space-x-3 flex-1">
-          <Avatar 
-            fallback={inquiry.clientName?.charAt(0)} 
+fallback={inquiry.Name?.charAt(0)} 
+            size="md"
             size="md"
           />
           
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between mb-1">
               <h3 className="font-semibold text-gray-900 truncate">
-                {inquiry.clientName}
+{inquiry.Name}
               </h3>
               <Badge variant={inquiry.status} size="sm">
                 {inquiry.status}
@@ -66,18 +66,18 @@ const InquiryCard = ({ inquiry }) => {
                 size={14} 
                 className="mr-1" 
               />
-              <span className="truncate">{inquiry.eventType}</span>
+<span className="truncate">{inquiry.subject}</span>
               <span className="mx-2">•</span>
-              <span>{format(new Date(inquiry.eventDate), 'MMM d, yyyy')}</span>
+<span>{format(new Date(inquiry.created_at), 'MMM d, yyyy')}</span>
             </div>
             
             <p className="text-sm text-gray-600 line-clamp-2 mb-3">
-              {inquiry.message}
+{inquiry.description}
             </p>
             
             <div className="flex items-center justify-between text-xs text-gray-500">
               <span>
-                Submitted {format(new Date(inquiry.submittedAt), 'MMM d, h:mm a')}
+Submitted {format(new Date(inquiry.created_at), 'MMM d, h:mm a')}
               </span>
               <ApperIcon name="ChevronRight" size={16} className="text-gray-400" />
             </div>

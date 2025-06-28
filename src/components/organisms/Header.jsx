@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import ApperIcon from '@/components/ApperIcon';
+import { AuthContext } from '@/App';
 
 const Header = () => {
   const location = useLocation();
@@ -34,8 +35,7 @@ const Header = () => {
               {getPageTitle()}
             </h1>
           </div>
-          
-          <div className="flex items-center space-x-2">
+<div className="flex items-center space-x-2">
             <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
               <ApperIcon name="Search" size={20} className="text-gray-600" />
             </button>
@@ -43,10 +43,25 @@ const Header = () => {
               <ApperIcon name="Bell" size={20} className="text-gray-600" />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-error-500 rounded-full"></div>
             </button>
+            <LogoutButton />
           </div>
         </div>
       </div>
     </header>
+  );
+};
+
+const LogoutButton = () => {
+  const { logout } = useContext(AuthContext);
+  
+  return (
+    <button 
+      onClick={logout}
+      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+      title="Logout"
+    >
+      <ApperIcon name="LogOut" size={20} className="text-gray-600" />
+    </button>
   );
 };
 

@@ -38,8 +38,8 @@ const NotificationsPage = () => {
       await notificationService.markAsRead(notificationId);
       setNotifications(prev => 
         prev.map(notification => 
-          notification.Id === notificationId 
-            ? { ...notification, read: true }
+notification.Id === notificationId 
+            ? { ...notification, is_read: true }
             : notification
         )
       );
@@ -53,7 +53,7 @@ const NotificationsPage = () => {
     try {
       await notificationService.markAllAsRead();
       setNotifications(prev => 
-        prev.map(notification => ({ ...notification, read: true }))
+prev.map(notification => ({ ...notification, is_read: true }))
       );
       toast.success('All notifications marked as read');
     } catch (err) {
@@ -62,7 +62,7 @@ const NotificationsPage = () => {
     }
   };
 
-  const unreadCount = notifications.filter(n => !n.read).length;
+const unreadCount = notifications.filter(n => !n.is_read).length;
 
   if (loading) return <Loading />;
   if (error) return <Error message={error} onRetry={loadNotifications} />;

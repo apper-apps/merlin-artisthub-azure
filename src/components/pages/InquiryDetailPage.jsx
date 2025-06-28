@@ -39,9 +39,12 @@ const InquiryDetailPage = () => {
 
   const handleStatusChange = async (newStatus) => {
     try {
-      const updatedInquiry = await inquiryService.update(inquiry.Id, {
-        ...inquiry,
-        status: newStatus
+const updatedInquiry = await inquiryService.update(inquiry.Id, {
+        Name: inquiry.Name,
+        subject: inquiry.subject,
+        description: inquiry.description,
+        status: newStatus,
+        priority: inquiry.priority
       });
       setInquiry(updatedInquiry);
       toast.success(`Status updated to ${newStatus}`);
@@ -100,7 +103,7 @@ const InquiryDetailPage = () => {
               />
               <div>
                 <h1 className="text-xl font-semibold text-gray-900">
-                  {inquiry.clientName}
+{inquiry.Name}
                 </h1>
                 <div className="flex items-center space-x-2 mt-1">
                   <Badge variant={inquiry.status} size="md">
@@ -120,11 +123,11 @@ const InquiryDetailPage = () => {
           <div className="space-y-3">
             <div className="flex items-center space-x-3">
               <ApperIcon name="Mail" size={18} className="text-gray-400" />
-              <span className="text-gray-700">{inquiry.clientEmail}</span>
+<span className="text-gray-700">{inquiry.subject}</span>
             </div>
             <div className="flex items-center space-x-3">
               <ApperIcon name="Phone" size={18} className="text-gray-400" />
-              <span className="text-gray-700">{inquiry.clientPhone}</span>
+<span className="text-gray-700">{inquiry.description}</span>
             </div>
           </div>
 
